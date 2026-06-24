@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navin Kumar Sharma | Professional Full Stack Developer</title>
+    <title>Navin Kumar Sharma | Full Stack Developer & GovTech Enterprise Specialist</title>
     <!-- Google Fonts for modern typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +22,8 @@
             --section-bg-light: #f8fafc;
             --card-light: #ffffff;
             --text-dark: #1e293b;
+            --gov-gold: #b45309;
+            --gov-bg: #fffbeb;
         }
 
         * {
@@ -101,15 +103,15 @@
         }
 
         .hero-content {
-            max-width: 900px;
+            max-width: 950px;
             z-index: 1;
         }
 
         .hero h1 {
-            font-size: 58px;
+            font-size: 54px;
             font-weight: 800;
             letter-spacing: -1.5px;
-            line-height: 1.2;
+            line-height: 1.25;
             margin-bottom: 15px;
         }
 
@@ -132,7 +134,7 @@
             font-size: 18px;
             line-height: 1.7;
             color: #8b949e;
-            max-width: 750px;
+            max-width: 800px;
         }
 
         .btn-group {
@@ -223,6 +225,27 @@
             margin-bottom: 0;
         }
 
+        /* --- Highlights Box --- */
+        .gov-banner {
+            background: var(--gov-bg);
+            border-left: 4px solid var(--gov-gold);
+            padding: 20px 25px;
+            border-radius: 12px;
+            margin-top: 25px;
+            color: #78350f;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .gov-banner h4 {
+            font-weight: 700;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--gov-gold);
+        }
+
         /* --- Experience Section --- */
         .timeline {
             max-width: 950px;
@@ -263,7 +286,7 @@
         }
 
         .timeline-role {
-            font-size: 19px;
+            font-size: 20px;
             font-weight: 700;
             color: var(--text-dark);
         }
@@ -275,16 +298,33 @@
 
         .timeline-meta {
             display: flex;
-            gap: 15px;
-            font-size: 13px;
-            color: #64748b;
+            flex-direction: column;
+            gap: 5px;
+            font-size: 14px;
+            color: #475569;
             margin-bottom: 12px;
             font-weight: 500;
         }
 
+        .gov-highlight-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #fff1f2;
+            color: #9f1239;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 700;
+            width: max-content;
+            margin-bottom: 8px;
+            border: 1px solid #ffe4e6;
+        }
+
         .timeline-meta span i {
-            margin-right: 5px;
-            color: #94a3b8;
+            margin-right: 6px;
+            color: var(--accent-glow);
+            width: 16px;
         }
 
         .timeline-date {
@@ -298,7 +338,7 @@
 
         .timeline-desc {
             color: #475569;
-            line-height: 1.6;
+            line-height: 1.7;
             font-size: 15px;
         }
 
@@ -456,7 +496,7 @@
             nav { padding: 15px 5%; }
             .nav-links { display: none; }
             section { padding: 70px 5%; }
-            .hero h1 { font-size: 38px; }
+            .hero h1 { font-size: 36px; }
             .hero h2 { font-size: 20px; }
             .hero p { font-size: 16px; }
             .timeline-header { flex-direction: column; align-items: flex-start; }
@@ -480,17 +520,17 @@
 
 <div class="hero">
     <div class="hero-content">
-        <h1>Engineering <span>Robust & Scalable</span> Web Environments</h1>
-        <h2>Full Stack Developer | Backend Specialist</h2>
+        <h1>Developing High-Availability <span>Government & Enterprise</span> Digital Systems</h1>
+        <h2>Full Stack Developer | GovTech Backend Specialist</h2>
         <p>
-            An analytical software developer architecting secure backend systems, database solutions, and enterprise platforms with trusted frameworks.
+            Architecting secure server infrastructures, dynamic process tracking modules, and reliable public-sector environments aligned with strict data governance, zero-downtime mandates, and transactional integrity.
         </p>
         <div class="btn-group">
             <a class="btn btn-primary" href="#contact">
                 Contact Me <i class="fa-solid fa-arrow-right"></i>
             </a>
             <a class="btn btn-secondary" href="#experience">
-                View Experience History
+                Explore Public Sector Portals
             </a>
         </div>
     </div>
@@ -501,61 +541,70 @@
     <div class="about-container">
         <div class="about-card">
             <p>
-                I am a focused <strong>Software Developer</strong> specializing in creating resilient web applications and large-scale government enterprise web solutions. Over my career, I have refined my expertise in structural backend optimization, secure third-party API configurations, complex dashboard metrics, and interactive dynamic user interfaces.
+                I am a disciplined and analytical <strong>Software Developer</strong> with specialized proficiency in constructing, scaling, and maintaining mission-critical web applications and large-scale government portal infrastructures. Over my full-stack career, I have repeatedly collaborated with public departments and corporate vendors to deliver transparent tracking mechanisms, role-based access architectures, and heavily fortified query optimizations.
             </p>
             <p>
-                My development approach emphasizes writing clear, maintainable, object-oriented code, designing cleanly tuned database architectures, and deploying dependable operational tools tailored to solve sophisticated system processes.
+                My engineering approach is driven by structural vigilance. Managing environments handling state initiatives and public utility subsidies requires strict alignment with security compliance, data confidentiality, clean procedural handling, and optimal database relational integrity.
             </p>
+
+            <div class="gov-banner">
+                <h4><i class="fa-solid fa-shield-halved"></i> GovTech Operations & Portal Discipline</h4>
+                Maintaining live state portals requires rigorous technical standards: implementing precise Role-Based Access Control (RBAC) to block data leaks, sanitizing massive transactional streams to secure official financial tracking pipelines, keeping server environments up to data privacy regulations, and writing high-efficiency query execution plans to withstand extreme traffic spikes.
+            </div>
         </div>
     </div>
 </section>
 
 <section id="experience">
-    <h2 class="title">Professional Experience</h2>
+    <h2 class="title">Professional Trajectory</h2>
     <div class="timeline">
         
         <!-- 1. JREDA -->
         <div class="timeline-item">
+            <div class="gov-highlight-tag"><i class="fa-solid fa-building-shield"></i> Government Sector Project</div>
             <div class="timeline-header">
-                <span class="timeline-role">Client Support Team & Developer <span class="timeline-company">| IOTAS Solutions Pvt. Ltd</span></span>
+                <span class="timeline-role">Client Support Team & Systems Developer <span class="timeline-company">| IOTAS Solutions</span></span>
                 <span class="timeline-date">Jan 2025 - Present</span>
             </div>
             <div class="timeline-meta">
-                <span><i class="fa-solid fa-location-dot"></i> On-site: JREDA Office, Ranchi</span>
-                <span><i class="fa-solid fa-handshake"></i> Client: Jharkhand Renewable Energy Development Agency</span>
+                <span><i class="fa-solid fa-landmark"></i> <strong>Apex Body:</strong> Jharkhand Renewable Energy Development Agency (Govt. of Jharkhand)</span>
+                <span><i class="fa-solid fa-location-dot"></i> On-site Deployment: JREDA Office, Ranchi</span>
             </div>
             <p class="timeline-desc">
-                Contributing actively to the development, rigorous maintenance, and real-time monitoring of official digital platforms. Support critical project workflows, corporate coordination, detailed technical reporting, and diverse operational workflows backing state-level renewable energy initiatives.
+                Entrusted with full-stack development, maintenance, and rigorous performance monitoring of official renewable energy software architectures. Drive core support mechanisms across critical web assets, orchestrate inter-departmental workflows, implement accurate process reporting matrices, and deliver dynamic module enhancements to directly support state-wide solar and clean energy tracking infrastructures.
             </p>
         </div>
 
         <!-- 2. GUVNL -->
         <div class="timeline-item">
+            <div class="gov-highlight-tag"><i class="fa-solid fa-building-shield"></i> Government Sector Project</div>
             <div class="timeline-header">
-                <span class="timeline-role">Software Developer <span class="timeline-company">| IOTAS Solutions Pvt. Ltd</span></span>
+                <span class="timeline-role">Software Developer <span class="timeline-company">| IOTAS Solutions</span></span>
                 <span class="timeline-date">Sep 2024 - Jan 2025</span>
             </div>
             <div class="timeline-meta">
-                <span><i class="fa-solid fa-location-dot"></i> Remote (From IOTAS Office, Ranchi)</span>
-                <span><i class="fa-solid fa-handshake"></i> Client: Gujarat Urja Vikas Nigam Ltd. (GUVNL)</span>
+                <span><i class="fa-solid fa-landmark"></i> <strong>Apex Body:</strong> Gujarat Urja Vikas Nigam Ltd. (GUVNL, Govt. of Gujarat)</span>
+                <span><i class="fa-solid fa-location-dot"></i> Deployment Base: Remote from IOTAS Main Office, Ranchi</span>
             </div>
             <p class="timeline-desc">
-                Engineered robust systemic layers focused on automated subsidy generation and back-end tracking matrices built precisely for solar power utility customers.
+                Engineered robust, secure logic layers specifically built for consumer subsidy computation, profile matching verification, and payment processing configurations. Maintained high-fidelity calculation accuracy within backend workflows tracking multi-tier financial allocations for solar panel utility clients.
             </p>
         </div>
 
         <!-- 3. JTDC -->
         <div class="timeline-item">
+            <div class="gov-highlight-tag"><i class="fa-solid fa-building-shield"></i> Government Sector Project</div>
             <div class="timeline-header">
-                <span class="timeline-role">Web Developer <span class="timeline-company">| IOTAS Solutions Pvt. Ltd</span></span>
+                <span class="timeline-role">Web Developer <span class="timeline-company">| IOTAS Solutions</span></span>
                 <span class="timeline-date">Apr 2023 - Sep 2024</span>
             </div>
             <div class="timeline-meta">
-                <span><i class="fa-solid fa-location-dot"></i> On-site: JTDC Headquarters, Ranchi</span>
-                <span><i class="fa-solid fa-handshake"></i> Client: Jharkhand Tourism (In Collaboration with Swisstech Infra)</span>
+                <span><i class="fa-solid fa-landmark"></i> <strong>Apex Body:</strong> Jharkhand Tourism Development Corporation (JTDC, Govt. of Jharkhand)</span>
+                <span><i class="fa-solid fa-handshake"></i> Joint Venture: Collaboration with Swisstech Infra Pvt. Ltd.</span>
+                <span><i class="fa-solid fa-location-dot"></i> On-site Deployment: JTDC Headquarters, Ranchi</span>
             </div>
             <p class="timeline-desc">
-                Developed targeted web solutions and public digital portals to modernize portal interactions, asset transparency, and organizational workflows.
+                Contributed clean semantic script writing, structural app layouts, and custom database modules to advance state tourism public services. Solved accessibility requirements, dynamic administrative inventory layouts, and public portal interaction streams.
             </p>
         </div>
 
@@ -566,10 +615,10 @@
                 <span class="timeline-date">Dec 2022 - Mar 2023</span>
             </div>
             <div class="timeline-meta">
-                <span><i class="fa-solid fa-location-dot"></i> On-site Team</span>
+                <span><i class="fa-solid fa-location-dot"></i> Core Development Team (On-site)</span>
             </div>
             <p class="timeline-desc">
-                Designed and built specialized structural applications. Successfully drove core backend updates across several high-priority products, including a central Inventory Management System, an E-Office pipeline tracking environment, and localized Aspirational Dashboards.
+                Programmed server-side scripts for several enterprise-ready applications. Spearheaded backend tracking schemas for an integrated Inventory Management System, automated process pathways within an executive E-Office layout, and adjusted metrics delivery pipelines inside complex localized Aspirational Dashboards.
             </p>
         </div>
 
@@ -580,11 +629,11 @@
                 <span class="timeline-date">Apr 2021 - Nov 2022</span>
             </div>
             <div class="timeline-meta">
-                <span><i class="fa-solid fa-location-dot"></i> Work From Home (Remote)</span>
-                <span><i class="fa-solid fa-handshake"></i> Corporate Client: IIFL Securities, Mumbai</span>
+                <span><i class="fa-solid fa-landmark"></i> <strong>Corporate Client:</strong> IIFL Securities (Mumbai Corporate HQ)</span>
+                <span><i class="fa-solid fa-location-dot"></i> Distributed Structure: Secure Work From Home Environment</span>
             </div>
             <p class="timeline-desc">
-                Focused heavily on robust server architectures and structural code patches for high-load online financial membership frameworks and scalable financial transactions support.
+                Architected protected service interfaces and server infrastructure patches supporting high-throughput online financial membership engines, optimizing session states, data storage access matrices, and operational logging.
             </p>
         </div>
 
@@ -595,10 +644,10 @@
                 <span class="timeline-date">Apr 2019 - Mar 2023</span>
             </div>
             <div class="timeline-meta">
-                <span><i class="fa-solid fa-clock"></i> Part-Time / Educational Coaching</span>
+                <span><i class="fa-solid fa-clock"></i> Educational Coaching (Part-Time Role)</span>
             </div>
             <p class="timeline-desc">
-                Mentored aspiring candidates and students in algorithmic design concepts, data structures, object-oriented design workflows, and core backend logic programming.
+                Educated emerging system engineers on structured algorithmic design paradigms, clear object-oriented design sequences, database configurations, and clean programming fundamentals.
             </p>
         </div>
 
