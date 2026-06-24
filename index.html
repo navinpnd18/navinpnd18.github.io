@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navin Kumar Sharma | Software Developer</title>
+    <title>Navin Kumar Sharma | Professional Full Stack Developer</title>
     <!-- Google Fonts for modern typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- FontAwesome for beautiful icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -69,7 +69,7 @@
             margin-left: 25px;
             font-size: 15px;
             font-weight: 500;
-            transition: color 0.3s, transform 0.3s;
+            transition: color 0.3s;
         }
 
         .nav-links a:hover {
@@ -82,7 +82,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 120px 10% 80px 10%;
+            padding: 140px 10% 100px 10%;
             background: radial-gradient(circle at 90% 10%, rgba(31, 111, 235, 0.15), transparent 40%),
                         linear-gradient(135deg, #070a12 0%, #0d1117 100%);
             color: white;
@@ -101,59 +101,80 @@
         }
 
         .hero-content {
-            max-width: 850px;
+            max-width: 900px;
             z-index: 1;
         }
 
         .hero h1 {
-            font-size: 56px;
+            font-size: 58px;
             font-weight: 800;
             letter-spacing: -1.5px;
             line-height: 1.2;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
         .hero h1 span {
-            background: linear-gradient(45deg, #58a6ff, #1f6feb);
+            background: linear-gradient(45deg, #58a6ff, #388bfd);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .hero h2 {
             font-size: 24px;
-            color: var(--text-muted);
+            color: #c9d1d9;
             font-weight: 400;
             margin-bottom: 25px;
+            letter-spacing: 0.5px;
         }
 
         .hero p {
-            margin: 0 auto 35px auto;
+            margin: 0 auto 40px auto;
             font-size: 18px;
             line-height: 1.7;
-            color: #c9d1d9;
-            max-width: 700px;
+            color: #8b949e;
+            max-width: 750px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
         }
 
         .btn {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            background: linear-gradient(45deg, #1f6feb, #388bfd);
-            color: white;
             padding: 14px 32px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            box-shadow: 0 4px 20px rgba(31, 111, 235, 0.4);
             transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .btn:hover {
+        .btn-primary {
+            background: linear-gradient(45deg, #1f6feb, #388bfd);
+            color: white;
+            box-shadow: 0 4px 20px rgba(31, 111, 235, 0.4);
+        }
+
+        .btn-primary:hover {
             transform: translateY(-3px);
             box-shadow: 0 6px 25px rgba(31, 111, 235, 0.6);
         }
 
-        /* --- Sections Universal --- */
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-3px);
+        }
+
+        /* --- Universal Sections --- */
         section {
             padding: 100px 10%;
         }
@@ -178,24 +199,113 @@
         }
 
         /* --- About Section --- */
-        #about .about-card {
-            background: var(--card-light);
-            padding: 40px;
-            border-radius: 24px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-            border: 1px solid rgba(0,0,0,0.04);
-            max-width: 900px;
+        #about .about-container {
+            max-width: 950px;
             margin: 0 auto;
+        }
+
+        .about-card {
+            background: var(--card-light);
+            padding: 45px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+            border: 1px solid rgba(0,0,0,0.04);
             line-height: 1.8;
             font-size: 17px;
             color: #475569;
-            text-align: center;
+        }
+
+        .about-card p {
+            margin-bottom: 20px;
+        }
+
+        .about-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* --- Experience Section --- */
+        .timeline {
+            max-width: 950px;
+            margin: 0 auto;
+            position: relative;
+            padding-left: 30px;
+            border-left: 3px solid #e2e8f0;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -41px;
+            top: 5px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: var(--accent-glow);
+            border: 4px solid var(--section-bg-light);
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .timeline-role {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .timeline-company {
+            color: var(--accent-glow);
+            font-weight: 600;
+        }
+
+        .timeline-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .timeline-meta span i {
+            margin-right: 5px;
+            color: #94a3b8;
+        }
+
+        .timeline-date {
+            font-size: 13px;
+            color: #1f6feb;
+            font-weight: 600;
+            background: rgba(31, 111, 235, 0.1);
+            padding: 4px 14px;
+            border-radius: 20px;
+        }
+
+        .timeline-desc {
+            color: #475569;
+            line-height: 1.6;
+            font-size: 15px;
         }
 
         /* --- Cards Grids --- */
         .cards {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
         }
 
@@ -210,7 +320,7 @@
 
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.06);
         }
 
         /* --- Skills Styling --- */
@@ -220,11 +330,12 @@
             margin-bottom: 20px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
 
         .card h3 i {
             color: var(--accent-glow);
+            font-size: 22px;
         }
 
         .card ul {
@@ -237,13 +348,14 @@
             margin-bottom: 12px;
             font-weight: 500;
             color: #475569;
+            font-size: 15px;
         }
 
         .card ul li::before {
-            content: "→";
+            content: "✓";
             position: absolute;
             left: 0;
-            color: var(--accent-glow);
+            color: #10b981;
             font-weight: bold;
         }
 
@@ -252,10 +364,11 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            height: 100%;
         }
 
         #projects .card h3 {
-            font-size: 22px;
+            font-size: 21px;
             margin-bottom: 12px;
         }
 
@@ -263,24 +376,42 @@
             color: #64748b;
             line-height: 1.6;
             font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: #f1f5f9;
+            color: #475569;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            border: 1px solid #e2e8f0;
         }
 
         /* --- Contact Styling --- */
         .contact-wrapper {
-            max-width: 600px;
+            max-width: 650px;
             margin: 0 auto;
             background: var(--card-light);
-            padding: 40px;
+            padding: 45px;
             border-radius: 24px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
             text-align: center;
+            border: 1px solid rgba(0,0,0,0.04);
         }
 
         .contact-info {
             display: flex;
             flex-direction: column;
-            gap: 20px;
-            margin-top: 20px;
+            gap: 15px;
+            margin-top: 25px;
         }
 
         .contact-item {
@@ -288,14 +419,15 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
-            font-size: 18px;
+            font-size: 17px;
             color: var(--text-dark);
             text-decoration: none;
-            padding: 12px;
-            border-radius: 12px;
+            padding: 14px;
+            border-radius: 14px;
             background: var(--section-bg-light);
-            transition: background 0.3s, color 0.3s;
+            transition: all 0.3s;
             font-weight: 500;
+            border: 1px solid #e2e8f0;
         }
 
         .contact-item i {
@@ -304,8 +436,9 @@
         }
 
         .contact-item:hover {
-            background: #e2e8f0;
+            background: #edf2f7;
             color: var(--accent-glow);
+            border-color: #cbd5e1;
         }
 
         /* --- Footer --- */
@@ -313,7 +446,7 @@
             background: #0d1117;
             color: var(--text-muted);
             text-align: center;
-            padding: 30px;
+            padding: 35px;
             font-size: 14px;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
@@ -321,11 +454,13 @@
         /* --- Responsive Design --- */
         @media (max-width: 768px) {
             nav { padding: 15px 5%; }
-            .nav-links { display: none; } /* Simplified for single page mobile view */
-            section { padding: 60px 5%; }
+            .nav-links { display: none; }
+            section { padding: 70px 5%; }
             .hero h1 { font-size: 38px; }
             .hero h2 { font-size: 20px; }
             .hero p { font-size: 16px; }
+            .timeline-header { flex-direction: column; align-items: flex-start; }
+            .btn-group { flex-direction: column; }
         }
     </style>
 </head>
@@ -336,6 +471,7 @@
     <h2><span>Navin</span> Kumar Sharma</h2>
     <div class="nav-links">
         <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
@@ -344,24 +480,128 @@
 
 <div class="hero">
     <div class="hero-content">
-        <h1>Hi, I'm <span>Navin Kumar Sharma</span></h1>
-        <h2>Software Developer</h2>
+        <h1>Engineering <span>Robust & Scalable</span> Web Environments</h1>
+        <h2>Full Stack Developer | Backend Specialist</h2>
         <p>
-            I build responsive, secure, and scalable web applications. 
-            Experienced in Laravel, PHP, CodeIgniter, .NET, MySQL, JavaScript, and modern web technologies.
+            An analytical software developer architecting secure backend systems, database solutions, and enterprise platforms with trusted frameworks.
         </p>
-        <a class="btn" href="#contact">
-            Contact Me <i class="fa-solid fa-arrow-right"></i>
-        </a>
+        <div class="btn-group">
+            <a class="btn btn-primary" href="#contact">
+                Contact Me <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a class="btn btn-secondary" href="#experience">
+                View Experience History
+            </a>
+        </div>
     </div>
 </div>
 
 <section id="about">
     <h2 class="title">About Me</h2>
-    <div class="about-card">
-        <p>
-            I am a dedicated Software Developer specializing in building robust web environments and enterprise-grade or government portal solutions. My core focus centers on optimized backend architectures, intricate database designs, secure RESTful APIs, clean code quality, and responsive UX implementation.
-        </p>
+    <div class="about-container">
+        <div class="about-card">
+            <p>
+                I am a focused <strong>Software Developer</strong> specializing in creating resilient web applications and large-scale government enterprise web solutions. Over my career, I have refined my expertise in structural backend optimization, secure third-party API configurations, complex dashboard metrics, and interactive dynamic user interfaces.
+            </p>
+            <p>
+                My development approach emphasizes writing clear, maintainable, object-oriented code, designing cleanly tuned database architectures, and deploying dependable operational tools tailored to solve sophisticated system processes.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2 class="title">Professional Experience</h2>
+    <div class="timeline">
+        
+        <!-- 1. JREDA -->
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <span class="timeline-role">Client Support Team & Developer <span class="timeline-company">| IOTAS Solutions Pvt. Ltd</span></span>
+                <span class="timeline-date">Jan 2025 - Present</span>
+            </div>
+            <div class="timeline-meta">
+                <span><i class="fa-solid fa-location-dot"></i> On-site: JREDA Office, Ranchi</span>
+                <span><i class="fa-solid fa-handshake"></i> Client: Jharkhand Renewable Energy Development Agency</span>
+            </div>
+            <p class="timeline-desc">
+                Contributing actively to the development, rigorous maintenance, and real-time monitoring of official digital platforms. Support critical project workflows, corporate coordination, detailed technical reporting, and diverse operational workflows backing state-level renewable energy initiatives.
+            </p>
+        </div>
+
+        <!-- 2. GUVNL -->
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <span class="timeline-role">Software Developer <span class="timeline-company">| IOTAS Solutions Pvt. Ltd</span></span>
+                <span class="timeline-date">Sep 2024 - Jan 2025</span>
+            </div>
+            <div class="timeline-meta">
+                <span><i class="fa-solid fa-location-dot"></i> Remote (From IOTAS Office, Ranchi)</span>
+                <span><i class="fa-solid fa-handshake"></i> Client: Gujarat Urja Vikas Nigam Ltd. (GUVNL)</span>
+            </div>
+            <p class="timeline-desc">
+                Engineered robust systemic layers focused on automated subsidy generation and back-end tracking matrices built precisely for solar power utility customers.
+            </p>
+        </div>
+
+        <!-- 3. JTDC -->
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <span class="timeline-role">Web Developer <span class="timeline-company">| IOTAS Solutions Pvt. Ltd</span></span>
+                <span class="timeline-date">Apr 2023 - Sep 2024</span>
+            </div>
+            <div class="timeline-meta">
+                <span><i class="fa-solid fa-location-dot"></i> On-site: JTDC Headquarters, Ranchi</span>
+                <span><i class="fa-solid fa-handshake"></i> Client: Jharkhand Tourism (In Collaboration with Swisstech Infra)</span>
+            </div>
+            <p class="timeline-desc">
+                Developed targeted web solutions and public digital portals to modernize portal interactions, asset transparency, and organizational workflows.
+            </p>
+        </div>
+
+        <!-- 4. IOTAS Core -->
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <span class="timeline-role">Backend Developer <span class="timeline-company">| IOTAS Solutions Pvt. Ltd</span></span>
+                <span class="timeline-date">Dec 2022 - Mar 2023</span>
+            </div>
+            <div class="timeline-meta">
+                <span><i class="fa-solid fa-location-dot"></i> On-site Team</span>
+            </div>
+            <p class="timeline-desc">
+                Designed and built specialized structural applications. Successfully drove core backend updates across several high-priority products, including a central Inventory Management System, an E-Office pipeline tracking environment, and localized Aspirational Dashboards.
+            </p>
+        </div>
+
+        <!-- 5. IIFL Securities -->
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <span class="timeline-role">Backend Developer <span class="timeline-company">| Sriram Info Technologies (Vendor)</span></span>
+                <span class="timeline-date">Apr 2021 - Nov 2022</span>
+            </div>
+            <div class="timeline-meta">
+                <span><i class="fa-solid fa-location-dot"></i> Work From Home (Remote)</span>
+                <span><i class="fa-solid fa-handshake"></i> Corporate Client: IIFL Securities, Mumbai</span>
+            </div>
+            <p class="timeline-desc">
+                Focused heavily on robust server architectures and structural code patches for high-load online financial membership frameworks and scalable financial transactions support.
+            </p>
+        </div>
+
+        <!-- 6. Hitech Academy -->
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <span class="timeline-role">Computer Programming Instructor <span class="timeline-company">| Hitech Academy</span></span>
+                <span class="timeline-date">Apr 2019 - Mar 2023</span>
+            </div>
+            <div class="timeline-meta">
+                <span><i class="fa-solid fa-clock"></i> Part-Time / Educational Coaching</span>
+            </div>
+            <p class="timeline-desc">
+                Mentored aspiring candidates and students in algorithmic design concepts, data structures, object-oriented design workflows, and core backend logic programming.
+            </p>
+        </div>
+
     </div>
 </section>
 
@@ -369,29 +609,32 @@
     <h2 class="title">Technical Expertise</h2>
     <div class="cards">
         <div class="card">
-            <h3><i class="fa-solid fa-code"></i> Backend</h3>
+            <h3><i class="fa-solid fa-gears"></i> Backend Ecosystems</h3>
             <ul>
-                <li>PHP (Laravel / CodeIgniter / CakePHP)</li>
-                <li>.NET (C# / MVC)</li>
-                <li>RESTful API Development</li>
+                <li>PHP (Laravel, CodeIgniter, CakePHP)</li>
+                <li>ASP.NET / C# MVC Environment</li>
+                <li>Secure RESTful API Development</li>
+                <li>Object-Oriented Programming (OOP)</li>
             </ul>
         </div>
 
         <div class="card">
-            <h3><i class="fa-solid fa-laptop-code"></i> Frontend</h3>
+            <h3><i class="fa-solid fa-code"></i> Frontend Interactivity</h3>
             <ul>
-                <li>HTML5 & CSS3</li>
-                <li>JavaScript (ES6+)</li>
-                <li>Bootstrap Framework</li>
+                <li>JavaScript (ES6+) & DOM Manipulation</li>
+                <li>HTML5 / Semantics & CSS3 Layouts</li>
+                <li>Bootstrap Responsive Systems</li>
+                <li>AJAX Async Implementations</li>
             </ul>
         </div>
 
         <div class="card">
-            <h3><i class="fa-solid fa-database"></i> Database & Tools</h3>
+            <h3><i class="fa-solid fa-database"></i> Database & Infrastructure</h3>
             <ul>
-                <li>MySQL / SQL Server (SSMS)</li>
-                <li>Adminer / Relational Database Design</li>
-                <li>Query Optimization</li>
+                <li>MySQL & Microsoft SQL Server (SSMS)</li>
+                <li>Relational Database Design & Structuring</li>
+                <li>Adminer Optimization Tools</li>
+                <li>Git Version Control & Postman</li>
             </ul>
         </div>
     </div>
@@ -402,22 +645,40 @@
     <div class="cards">
         <div class="card">
             <div>
-                <h3><i class="fa-solid fa-layer-group" style="color:var(--accent-glow); margin-right:10px;"></i> JREDA Portal</h3>
-                <p>Advanced government dynamic infrastructure web platform integrating extensive operational modules, custom dynamic forms, and comprehensive database structures.</p>
+                <h3>JREDA Enterprise Portal</h3>
+                <p>An enterprise-grade government information system managing secure applicant pipelines, dynamic input engines, role-based security access matrices, and complex multi-layered data arrays.</p>
+            </div>
+            <div class="tech-tags">
+                <span class="tag">PHP</span>
+                <span class="tag">Laravel</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">REST API</span>
             </div>
         </div>
 
         <div class="card">
             <div>
-                <h3><i class="fa-solid fa-calendar-check" style="color:var(--accent-glow); margin-right:10px;"></i> Booking Management Engine</h3>
-                <p>A sophisticated room and resource engine featuring live interactive calendars, structural availability logic workflows, and a powerful administrative matrix.</p>
+                <h3>Dynamic Hotel Booking Engine</h3>
+                <p>A sophisticated room and resource management system featuring absolute inventory control, live interactive availability grids, automated transactional pipelines, and an intensive administrative workspace.</p>
+            </div>
+            <div class="tech-tags">
+                <span class="tag">CodeIgniter</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">Razorpay</span>
             </div>
         </div>
 
         <div class="card">
             <div>
-                <h3><i class="fa-solid fa-chart-line" style="color:var(--accent-glow); margin-right:10px;"></i> Enterprise Dashboards</h3>
-                <p>Tailored high-performance modern business intelligence solutions, secured tracking metrics, registration pipelines, and user permission access workflows.</p>
+                <h3>Business Intelligence Dashboards</h3>
+                <p>Custom analytics applications generating secure user management controls, complex metric registration streams, activity logs, and real-time operations overview charts.</p>
+            </div>
+            <div class="tech-tags">
+                <span class="tag">.NET MVC</span>
+                <span class="tag">C#</span>
+                <span class="tag">Bootstrap</span>
+                <span class="tag">SSMS</span>
             </div>
         </div>
     </div>
@@ -426,7 +687,9 @@
 <section id="contact">
     <h2 class="title">Get In Touch</h2>
     <div class="contact-wrapper">
-        <p style="color: #64748b; margin-bottom: 20px;">Have a project in mind or want to discuss development updates? Reach out directly via email or check my active repositories.</p>
+        <p style="color: #64748b; margin-bottom: 20px; font-weight: 500;">
+            Looking for an experienced engineer to streamline your backend workflows, optimize data schemas, or construct robust full-stack applications? Let's connect.
+        </p>
         <div class="contact-info">
             <a href="mailto:navinpnd18@gmail.com" class="contact-item">
                 <i class="fa-regular fa-envelope"></i> navinpnd18@gmail.com
@@ -439,7 +702,7 @@
 </section>
 
 <footer>
-    © 2026 Navin Kumar Sharma .
+    © 2026 Navin Kumar Sharma. All rights reserved.
 </footer>
 
 </body>
